@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>彩印_手提袋</title>
+		<link rel="stylesheet" type="text/css" href="L_css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakTop.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakBot.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/liucheng.css"/>
+		<link rel="stylesheet" type="text/css" href="L_css/reticule.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/shouhou.css"/>
+		<script src="L_js/jquery-1.7.2.js"></script>
+		<script src="L_js/ajax.js"></script>
+		<script src="L_js/fangdajing.js"></script>
+		<script src="L_js/reticule.js"></script>
+	</head>
+	<body>
+		<!--top-->
+		<div id="top"></div>
+		<!--menu-->
+		<div class="car_box w clearfix">
+			<div class="sidebar_l fl">
+				<div class="con-FangDa" id="fangdajing">
+				  <div class="con-fangDaIMg">
+				  	<!-- 正常显示的图片-->
+				  	<img src="L_img/navstdl-1.png">
+				    <!-- 滑块-->  
+				    <div class="magnifyingBegin"></div>
+				    <!-- 放大镜显示的图片 -->
+				    <div class="magnifyingShow">
+				    	<img src="L_img/navstdl-1.png">
+				    </div>
+				  </div>
+				  
+				  <ul class="con-FangDa-ImgList">
+				    <!-- 图片显示列表 -->
+				    <li class="active">
+				    	<img src="L_img/navstdm-1.png" data-bigimg="L_img/navstdl-1.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/navstdm-2.png" data-bigimg="L_img/navstdm-2.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/navstdm-1.png" data-bigimg="L_img/navstdl-1.png">
+				    </li>
+				   
+				  </ul>
+				</div>
+
+				
+				<div class="fenx">
+					<span class="fl">分享</span>
+					<span class="sc fl">收藏商品(19人气)</span>
+					<strong class="fr">举报</strong>
+				</div> 
+			</div>
+			
+		<!--名片企业-->	
+			<div class="sidebar_r fr">
+				<div class="sider_tp">
+					<strong>手提袋</strong><span>企业／个人的代言物</span>
+				</div>
+		<!--===========R=============-->
+		
+				<ul class="slidbr_box">
+					<li class="czlx clearfix asset1" id="asset1">
+						<span class="fl">纸张类型：</span>
+						<select name="" class="sele1 fl" id="sele1">
+							<option value="0">-请选择-</option>
+							<option value="1">白卡纸</option>
+						</select>
+						<span class="fl">材料克数：</span>
+						<select name="" class="sele2 fl">
+							<option value="0">-请选择-</option>
+							<option value="1">250g</option>
+						</select>
+					</li>
+					<li class="zzcc" id="zzcc">
+						<span class="fl">纸张尺寸：</span>
+						<select name="" class="sele1 fl">
+							<option value="0">- 请选择 -</option>
+							<option value="1">325*270*90mm</option>
+							
+						</select>
+						<div class="zhizbox fl clearfix ">
+							<div class="ch_box fl "></div>
+							<span class="zdyc fl">自定尺寸</span>
+							<div class="chicn fl" id="chicn">
+								<input type="text" name="" id="" value=""/> <span>x</span>
+								<input type="text" name="" id="" value=""/> <span>x</span>
+								<input type="text" name="" id="" value=""/> <span>mm</span>
+							</div>
+						</div>
+					</li>
+					<li class="henum clearfix" id="henum1">
+						<span class="fl">数量：</span>
+						<div class="fl clearfix">
+							<input type="text" name="" value="500" id="text1"/>
+							<i id="up"></i><i class="down" id="down"></i>
+						</div>
+						<span class="fl he">个</span>
+					</li>
+					
+					<li class="clearfix houqi">
+						<span class=" fl">后期：</span>
+						<div class="ch_box2 fl" id="hq"></div>
+					</li>
+					<li class="gongy" id="gongy">
+						<div class="fumo clearfix">
+							<span class="fl">覆膜：</span>
+							<select name="" class="fl">
+								<option value="">请选择</option>
+								<option value="">亮膜</option>
+								<option value="">哑膜</option>
+								<option value="">无</option>
+							</select>
+						</div>
+						<div class="gy clearfix" id="gybox">
+							<span class="fl">工艺：</span>
+							<div class="fl" id="div1"></div>
+							<span class="fl">打气眼</span>
+							<div class="fl" id="div2"></div>
+							<span class="fl">穿绳</span>
+						</div>
+						<div class="szys clearfix">
+							<span class="fl">绳子颜色：</span>
+							<select name="" class="fl">
+								<option value="">请选择</option>
+								<option value="">无</option>
+								<option value="">白色</option>
+								<option value="">红色</option>
+								<option value="">绿色</option>
+								<option value="">蓝色</option>
+								<option value="">黄色</option>
+							</select>
+							<div class="fl" id="color"></div>
+							<span class="fl">自定颜色</span>
+							<input type="text" class="text fl" id="c_text"/>
+						</div>
+						<div class="szcz clearfix">
+							<span class="fl">绳子材质：</span>
+							<select name="" class="fl">
+								<option value="">请选择</option>
+								<option value="">棉绳</option>
+								<option value="">尼龙绳</option>
+								<option value="">无</option>
+							</select>
+							<div class="fl" id="color2"></div>
+							<span class="fl">自定材质：</span>
+							<input type="text" class="text" id="c_text2"/>
+						</div>
+					</li>
+					<!--印刷文件-->
+					<li class="yswj clearfix" id="yswj">
+						<span class="fl">印刷文件：</span>
+						<div class="upbox fl clearfix" id="upbox">
+							<a href="javascript:;">
+								<i class="fl"></i>
+								<b class="fr"></b>
+								<strong class="fl">上传印刷文件</strong>
+							</a>
+						</div>
+						<div class="zxmb fl clearfix" id="downbox">
+							<a href="javascript:;">
+								<i class="fl"></i>
+								<b class="fr"></b>
+								<strong class="fl">上传印刷文件</strong>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="jiage">
+					<span>价格:</span><strong>¥<i>16.00</i></strong>
+				</div>
+				<div class="ljxd clearfix">
+					<a href="javascript:;"><span class="fl">立即下单</span></a>
+					<a href="javascript:;"><div class="fl"><i>加入购物车</i><b></b></div></a>
+				</div>
+				<h6>
+					服务承诺 	1-2天起（数量大于200个延长1天）。<br/>
+					客服7*11小时在线服务 按时印刷发货，质量问题免费重印，提供正规发票。	
+				</h6>
+			</div>
+		</div>
+		
+	<!--
+		content
+	-->		
+		
+	<!--购买流程-->
+		
+		<div class="content w">
+			<!--流程-->
+			<div id="liucheng"></div>
+			<!--规格参数-->
+			<div class="gmlc">
+				<div class="gmlc clearfix">
+					<i class="shopg fl">规格参数</i>
+					<ul class="shop_text fl clearfix">
+						<li class="fl">
+							<span class="mbp33"><i>商品名称：</i>手提袋</span>
+							<span><i>印刷数量：</i>10本起印</span>
+						</li> 
+						<li class="ly19 fl">
+							<span class="mbp33"><i>材料类型：</i>100g胶版纸</span>
+							<span><i>成品尺寸：</i>A3  A4  A5</span>
+						</li> 
+						<li class="r3 fr">
+							<span><i>出货周期：</i>3天</span>
+						</li> 
+					</ul>
+				
+				</div>
+			</div>
+			<!--
+            	手提袋案例
+            -->
+            <!--line-->
+			<div class="mptext">
+				 <i>————</i><strong>手提袋案例</strong><i>————</i> 
+				<h5>LEAFLET  CASE </h5>
+			</div>
+			<ul class="navimg clearfix">
+				<li><img src="L_img/stdal1.png" alt="" /></li>
+				<li class="lrmar"><img src="L_img/stdal2.png" alt="" /></li>
+				<li><img src="L_img/stdal3.png" alt="" /></li>
+			</ul>
+			<div class="mptext">
+				 <i>————</i><strong>尺寸规格</strong><i>————</i> 
+				<h5>MODEL</h5>
+			</div>
+			<p class="baner_p"></p>
+			<div class="mptext">
+				 <i>————</i><strong>产品细节</strong><i>————</i> 
+				<h5>STYLE</h5>
+			</div>
+			<ul class="reticule_xij clearfix">
+				<li><img src="L_img/reticu_x-1.png" alt="" /></li>
+				<li class="lrmargin"><img src="L_img/reticu_x-2.png" alt="" /></li>
+				<li><img src="L_img/reticu_x-3.png" alt="" /></li>
+			</ul>
+			<p class="reticule_x-4"><img src="L_img/reticu_x-4.png" alt="" /></p>
+			<div class="mptext">
+				 <i>————</i><strong>售后无忧</strong><i>————</i> 
+				<h5>AFTER-SALES</h5>
+			</div>
+			<!--售后-->
+			 <div id="shouh"></div>
+		</div>
+		
+		
+		<!--footer
+		-->
+		<div id="bot"></div>
+		 <script >
+		 	loadHtml("bak/bakTop.html", "top");
+		 	loadHtml("bak/bakBot.html", "bot");
+		 	loadHtml("bak/liucheng.html", "liucheng");
+		 	loadHtml("bak/shouhou.html", "shouh");
+		 	function autoWidth(id)
+			  {
+				  id.style.width = '158px';
+			  }
+			;(function(){
+				var selectId = document.getElementById("sele1");
+		 		autoWidth(selectId);
+			})();
+		 </script>
+		<script src="bak/bak_js/bak_jq_top.js"></script>
+		<script src="bak/bak_js/bak_top.js"></script>
+	</body>
+</html>

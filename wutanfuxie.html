@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>彩印_无碳复写</title>
+		<link rel="stylesheet" type="text/css" href="L_css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakTop.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakBot.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/liucheng.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/shouhou.css"/>
+		<link rel="stylesheet" type="text/css" href="L_css/wutanfuxie.css"/>
+		<script src="L_js/jquery-1.7.2.js"></script>
+		<script src="L_js/ajax.js"></script>
+		<script src="L_js/fangdajing.js"></script>
+		<script src="L_js/wutanfuxie.js"></script>
+	</head>
+	<body>
+		<!--top-->
+		<div id="top"></div>
+		<!--menu-->
+		<div class="car_box w clearfix">
+			<div class="sidebar_l fl">
+				<div class="con-FangDa" id="fangdajing">
+				  <div class="con-fangDaIMg">
+				  	<!-- 正常显示的图片-->
+				  	<img src="L_img/fux_zs-l1.png">
+				    <!-- 滑块-->  
+				    <div class="magnifyingBegin"></div>
+				    <!-- 放大镜显示的图片 -->
+				    <div class="magnifyingShow">
+				    	<img src="L_img/fux_zs-l1.png">
+				    </div>
+				  </div>
+				  
+				  <ul class="con-FangDa-ImgList">
+				    <!-- 图片显示列表 -->
+				    <li class="active">
+				    	<img src="L_img/fux_zs1.png" data-bigimg="L_img/fux_zs1.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/fux_zs2.png" data-bigimg="L_img/fux_zs2.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/fux_zs2.png" data-bigimg="L_img/fux_zs2.png">
+				    </li>
+				   </ul>
+				</div>
+
+				
+				<div class="fenx">
+					<span class="fl">分享</span>
+					<span class="sc fl">收藏商品(19人气)</span>
+					<strong class="fr">举报</strong>
+				</div> 
+			</div>
+			
+		<!--名片企业-->	
+			<div class="sidebar_r fr">
+				<div class="sider_tp">
+					<strong>无碳复写</strong>
+				</div>
+		<!--===========R=============-->
+		
+				<ul class="slidbr_box">
+					<li class="zzcc" id="zzcc">
+						<span class="fl">纸张尺寸：</span>
+						<select name="" class="sele1 fl" id="wsele1">
+							<option value="0">- 请选择 -</option>
+							<option value="1">90*130mm</option>
+							<option value="2">130*260mm</option>
+							<option value="3">105*145mm</option>
+							<option value="4">95*210mm</option>
+							<option value="5">145*210mm</option>
+							<option value="6">210*297mm</option>
+						</select>
+						<div class="zhizbox fl clearfix ">
+							<div class="ch_box fl "></div>
+							<span class="zdyc fl">自定尺寸</span>
+							<div class="chicn fl" id="chicn">
+								<input type="text" name="" id="" value=""/> <span>x</span>
+								
+								<input type="text" name="" id="" value=""/> <span>mm</span>
+							</div>
+						</div>
+					</li>
+					<li class="czlx clearfix asset1" id="asset1">
+						<span class="fl">联数：：</span>
+						<select name="" class="sele1 fl" id="sele1">
+							<option value="0">-请选择-</option>
+							<option value="1">二联</option>
+							<option value="2">三联</option>
+							<option value="3">四联</option>
+						</select>
+						<span class="fl">印刷方式：</span>
+						<select name="" class="sele2 fl">
+							<option value="0">-请选择-</option>
+							<option value="1">单色</option>
+						</select>
+					</li>
+					<li class="gy clearfix" id="gybox">
+						<span class="fl">工艺：</span>
+						<div class="fl" id="div1"></div>
+						<span class="fl">打拢线</span>
+						<div class="fl" id="div2"></div>
+						<span class="fl">包面</span>
+						<span class="fl dhm">打号码：</span>
+						<select name="" class="fl">
+							<option value="0">-请选择-</option>
+							<option value="1">带NO</option>
+							<option value="2">不带NO</option>
+						</select>
+					</li>
+					<li class="henum clearfix" id="henum1">
+						<span class="fl">数量：</span>
+						<div class="fl clearfix">
+							<input type="text" name="" value="50" id="text1"/>
+							<i id="up"></i><i class="down" id="down"></i>
+						</div>
+						<span class="fl he">张</span>
+					</li>
+					
+					 
+					
+					<!--印刷文件-->
+					<li class="yswj clearfix" id="yswj">
+						<span class="fl">印刷文件：</span>
+						<div class="upbox fl clearfix" id="upbox">
+							<a href="javascript:;">
+								<i class="fl"></i>
+								<b class="fr"></b>
+								<strong class="fl">上传印刷文件</strong>
+							</a>
+						</div>
+						<div class="zxmb fl clearfix" id="downbox">
+							<a href="javascript:;">
+								<i class="fl"></i>
+								<b class="fr"></b>
+								<strong class="fl">上传印刷文件</strong>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="jiage">
+					<span>价格:</span><strong>¥<i>16.00</i></strong>
+				</div>
+				<div class="ljxd clearfix">
+					<a href="javascript:;"><span class="fl">立即下单</span></a>
+					<a href="javascript:;"><div class="fl"><i>加入购物车</i><b></b></div></a>
+				</div>
+				<h6>
+					服务承诺 	1-2天起（数量大于200个延长1天）。<br/>
+					客服7*11小时在线服务 按时印刷发货，质量问题免费重印，提供正规发票。	
+				</h6>
+			</div>
+		</div>
+		
+	<!--
+		content
+	-->		
+		<!--购买流程-->
+		
+		<div class="content w">
+			<!--流程-->
+			<div id="liucheng"></div>
+			
+			<!--规格参数-->
+			<div class="gmlc">
+				<div class="gmlc clearfix">
+					<i class="shopg fl">规格参数</i>
+					<ul class="shop_text fl clearfix">
+						<li class="fl">
+							<span class="mbp33"><i>商品名称：</i>无碳复写</span>
+							<span><i>印刷数量：</i>10本起印</span>
+						</li> 
+						<li class="ly19 fl">
+							<span class="mbp33"><i>材料类型：</i>100g胶版纸</span>
+							<span><i>成品尺寸：</i>90*130mm</span>
+						</li> 
+						<li class="r3 fr">
+							<span><i>出货周期：</i>3天</span>
+						</li> 
+					</ul>
+				</div>
+			</div>
+			<!--line-->
+			<div class="mptext">
+				 <i>————</i><strong>复写案例</strong><i>————</i> 
+				<h5>CATALOGUE  CASE </h5>
+			</div>
+			<!--复写案例-->
+			<ul class="fxal_box clearfix">
+				<li><img src="L_img/fxal1.png" alt="" /></li>
+				<li class="marlr"><img src="L_img/fxal2.png" alt="" /></li>
+				<li><img src="L_img/fxal3.png" alt="" /></li>
+			</ul>
+			<div class="mptext">
+				 <i>————</i><strong>尺寸规格</strong><i>————</i> 
+				<h5>MODEL</h5>
+			</div>
+			<p class="fuxcc">
+				<img src="L_img/fuxiecc.png" alt="" />
+			</p>
+			<div class="mptext">
+				 <i>————</i><strong>产品细节</strong><i>————</i> 
+				<h5>STYLE</h5>
+			</div>
+			<ul class="wuxij clearfix">
+				<li><img src="L_img/wuxj1.png" alt="" /></li>
+				<li class="marlr"><img src="L_img/wuxj2.png" alt="" /></li>
+				<li><img src="L_img/wuxj3.png" alt="" /></li>
+			</ul>
+			<div class="mptext">
+				 <i>————</i><strong>特点</strong><i>————</i> 
+				<h5>STYLE</h5>
+			</div>
+			<div class="fxtd"><img src="L_img/fuxted.png" alt="" /></div>
+			<div class="mptext">
+				 <i>————</i><strong>售后无忧</strong><i>————</i> 
+				<h5>AFTER-SALES</h5>
+			</div>
+			<div id="shouh"></div>
+		</div>
+		
+		<!--footer
+		-->
+		<div id="bot"></div>
+		 <script >
+		 	loadHtml("bak/bakTop.html", "top");
+		 	loadHtml("bak/liucheng.html", "liucheng");
+		 	loadHtml("bak/shouhou.html", "shouh");
+		 	loadHtml("bak/bakBot.html", "bot");
+		 	function autoWidth(id)
+			  {
+				  id.style.width = '140px';
+			  }
+			;(function(){
+				var selectId = document.getElementById("wsele1");
+		 		autoWidth(selectId);
+			})();
+		 </script>
+		<script src="bak/bak_js/bak_jq_top.js"></script>
+		<script src="bak/bak_js/bak_top.js"></script>
+	</body>
+</html>

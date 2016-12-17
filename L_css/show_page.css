@@ -1,0 +1,44 @@
+
+/*全部结果*/
+.nav{width:100%;margin:0 auto;}
+.qbjg_box{width:1185px;padding-left:15px;height:1644px;}
+.qbjg_box h4{height:46px;line-height: 46px;color:#696969;font-weight: bold;margin-left:3px;}
+
+.zonghe{height:40px;margin-left:3px;  }
+.zh_ul{width:224px;height:22px;border:1px solid #d1d1d1;background:#fff;}
+.zh_ul li{width:44px;height:22px;line-height: 22px;float:left;font-family: "PingFang-SC-Medium";font-size: 12px;color: #8C7C74;cursor:pointer;text-indent:4px;
+background:url(../L_img/down1.png) no-repeat 31px center;border-right:1px solid #d1d1d1;}
+.zh_ul .bor_n{border-right:none;}
+.zh_ul .active{color:#c12a26;background:url(../L_img/down2.png) no-repeat 31px center;}
+/*展示页*/
+.show_pg{padding-top:16px;  }
+.show_pg li{width:210px;height:330px;padding:3px; border:1px solid #eee;float:left;margin-bottom:50px;margin-right:20px;}
+.show_pg .right_n{margin-right:0;}
+.show_pg li a{display:block;}
+.jd_CCC{width:210px;height:200px;background: #F7F7F7;padding-top:10px;text-align: center;}
+.jd_CCC i{width:30px;height:40px;background:url(../L_img/zs_icon.png) no-repeat center;display:block;color:#fff;font-family: "PingFangSC-Semibold";margin-left:10px;
+font-size: 13px;text-align: center;line-height: 33px;}
+.jd_CCC img{ height:160px;}
+.show_pg li a p{height:40px;line-height: 15px;font-family:"PingFang-SC-Semibold";
+font-size: 13px;color: #A3A3A3;padding:13px 5px 0 5px;}
+
+.dao_le{height:22px;padding-left:5px;font-family: "PingFangSC-Semibold";font-size: 14px;}
+.dao_le strong{color: #C12A26;}
+.dao_le strong i{font-size:20px;font-weight:bold;}
+.dao_le span{ color: #A3A3A3;margin-left:24px;}
+.dao_le span b{text-decoration: line-through; }
+
+.cheng{width:100%;height:30px;border-top:1px solid #e7e7e7;font-size:13px;line-height: 31px;margin-top:14px;font-family: "PingFang-SC-Regular";color: #434343; }
+.cheng strong{border-right:1px solid #e7e7e7;display:inline-block;padding:0 7px;}
+.cheng strong i{color:#d07503;}
+.cheng span{display:inline-block;padding:0 7px;color:#C12A26;}
+/*底部颜色*/
+.ft_boxb{background:#F7F7F7;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+.car_box{border-bottom:1px solid #979797;padding-top:24px;}
+/*sidebar_l*/
+.sidebar_l{width:473px;height:100%; }
+/*=========left=======*/
+/*主容器*/
+.con-FangDa{width: 473px;height: 551px;position: relative;}
+/*正常容器*/
+.con-fangDaIMg{width: 473px;height: 456px;}
+.con-fangDaIMg > img{width: 473px;height:456px;}
+/*滑块*/
+.magnifyingBegin{width: 200px;height: 200px;left: 0;top: 0;background-color: blue;opacity: 0.3;filter:alpha(opacity=30);position: absolute;cursor: move;display: none;}
+/*放大镜显示区域*/
+.magnifyingShow{width: 473px;height: 456px;display: none;position: absolute;left: 483px;top: 0;overflow: hidden;}
+.magnifyingShow img{position:absolute;left:0;top:0;width:1120px;height:1060px;}
+/*设置选择图片容器*/
+.con-FangDa-ImgList{height:60px;margin:30px 80px;}
+.con-FangDa-ImgList > li{margin-left:30px;width: 60px;height: 60px;float: left;cursor: pointer;border: 1px solid #666;text-align:center;}
+.con-FangDa-ImgList > li > img{display:inline;width:60px;height:60px;}
+.con-FangDa-ImgList > .active{border-color:#000;}
+/* ====== =======*/
+.fenx{ padding:32px 37px;font-family: "PingFangSC-Semibold";font-size: 16px;font-weight:bold;color: #A3A3A3;line-height: 16px; }
+.fenx span{height:18px;background:url(../L_img/fx.png) no-repeat left center;padding-left:23px;line-height: 18px;}
+.fenx .sc{background:url(../L_img/sc.png) no-repeat left center;margin-left:26px;}
+.fenx strong{font-weight:bold;}
+/*sidebar_r*/
+.sidebar_r{width:666px;}
+.sider_tp{height:37px;width:100%;border-bottom:1px solid #979797;font-family:" PingFangSC-Semibold";}
+.sider_tp strong{font-size: 30px;color: #4C4C4C;font-weight:bold;line-height: 30px;}
+.sider_tp span{font-size:16px;font-weight:bold;color:#8f8f8f;margin-left:18px;}
+/*===========R===========*/
+.slidbr_box{margin-top:15px;}
+.slidbr_box select{border:3px solid #9e9e9e;background:url(../L_img/dow1.png) no-repeat right;
+color:#8F8F8F;font-family:"PingFangSC-Semibold";font-size: 16px;padding-left:17px;
+appearance: none;
+-webkit-appearance: none;
+ -moz-appearance: none;
+-ms-appearance:none;}
+.slidbr_box .red{border-color:#ef0000;}
+.slidbr_box option{font-family: "PingFangSC-Semibold";font-size: 16px;color:red;background:#fff;}
+.slidbr_box span{font-family: "PingFangSC-Semibold";font-size: 16px;color: #868686;width:82px;}
+.slidbr_box li{height:49px;padding-top:15px;}
+.slidbr_box input{cursor:pointer;line-height: 30px;}
+.slidbr_box li select{cursor:pointer;}
+.czlx{}
+.slidbr_box li span{line-height:34px;font-weight:bold;}
+.czlx option{line-height: 40px;}
+.czlx select{padding-left: 12px;border:3px solid #9E9E9E;line-height: 30px;height:32px;}
+.sele1{width:120px;margin-right:67px;}
+.sele2{width:120px;}
+/*纸张尺寸*/
+.slidbr_box .zzcc{padding-top:13px;}
+.zzcc .sele1{width:195px;height:30px;margin-right:30px;}
+.zhizbox{cursor:pointer;}
+.zhizbox .zdyc{line-height: 32px;}
+.zzcc .ch_box{margin:8px 14px 0 0;background:url(../L_img/baid.png) no-repeat;width:16px;height:16px;}
+.zzcc .redd{background:url(../L_img/redd.png) no-repeat;}
+.chicn{line-height: 30px;display:none;margin-top:-4px;}
+.chicn input{width:50px;height:30px;border:2px solid #9e9e9e;text-align: center;}
+/*盒数*/
+.henum{}
+.henum div{width:94px;height:34px;cursor: pointer;}
+.henum input{width:60px;height:30px;border:2px solid #9E9E9E;float:left;text-align: center;}
+.henum div i{float:right;width:18px;height:14px;background:url(../L_img/top1.png) no-repeat center;border:1px solid #9E9E9E;}
+.henum div .down{background:url(../L_img/dow1.png) no-repeat center;margin-top:2px;}
+.he{margin-left:13px;}
+/*后期*/
+.slidbr_box .houqi{height:46px;padding-top:0;}
+.slidbr_box .houqi span{line-height: 46px;}
+.slidbr_box .houqi div{margin-top:15px;}
+.ch_box2 , .szys div{background:url(../L_img/baid.png) no-repeat;width:16px;height:16px;cursor: pointer;}
+.redd{background:url(../L_img/redd.png) no-repeat;}
+.slidbr_box .gongy{padding:0;display:none;height:234px;}
+.gongy select{height:30px;margin-top:13px;} 
+.fumo{height:57px;}
+.fumo select{width:85px;padding-left:7px;}
+/* 工艺*/
+.gongy div div{width:16px;height:16px;margin:20px 16px 0 0;background:url(../L_img/baid.png) no-repeat;cursor: pointer;}
+.gongy div span{line-height: 57px;}
+.gongy .gy .redd ,.gongy div .color{background:url(../L_img/redd.png) no-repeat;}
+/* 绳子颜色：*/
+.szcz , .szys , .gy{height:57px;}
+.szcz select , .szys select{width:85px;padding-left:7px;}
+.gongy .szys div, .gongy .szcz div{margin:19px 12px 0 28px;}
+.gongy input{height:32px;border:2px solid #9E9E9E;text-align: center;line-height: 32px;margin-top:12px;display:none;width:100px;}
+/*印刷文件*/
+.slidbr_box .yswj{height:75px;padding-top:15px; }
+.slidbr_box .yswj span{line-height: 65px;}
+.yswj div{width:178px;height:56px;border:3px solid #9e9e9e;text-align:center;margin-right:72px;cursor: pointer;}
+.yswj .red{border-color:#ef0000;}
+.yswj div i{width:30px;height:30px;display:block;background:url(../L_img/putdonw.png) no-repeat 0 0;margin:4px 0 3px 72px;}
+.yswj .upp i{background-position:0 -368px;}
+.yswj div b{width:16px;height:14px;background: url(../L_img/duig.png) no-repeat center;display:none;}
+.yswj .red{border-color:#ec5554;}
+.up .upi{background-position:0 -60px;}
+.yswj strong{font-family:" PingFangSC-Semibold";font-size: 16px;color: #868686;font-weight:bold;line-height: 16px;text-align: center;width:100%;}
+.yswj .zxmb i{background-position:0 -120px;height:30px;}
+.yswj .dowpp i{background-position:0 -230px;}
+.yswj .zxcolor{color:red;}
+
+.jiage{width:664px;height:60px;background:#FFF0F0;line-height: 60px;font-family: "PingFangSC-Semibold";margin-top:58px;}
+.jiage span{font-size: 16px;color: #868686;margin-right:30px;font-weight:bold;}
+.jiage strong{font-size: 16px;color: #C12A26;}
+.jiage strong i{font-size: 36px;font-weight:bold;}
+.ljxd{font-family: "PingFang-SC-Regular";padding:24px 0 0 138px;height:40px;}
+.ljxd span{width:178px;height:38px;border:1px solid #ca0000;margin-right:19px;line-height: 38px;color: #CA0000;background:#ffefef;text-align: center;font-weight:bold;}
+.ljxd div{width:180px;height:40px;background:#f30625;line-height: 40px;color: #FFF;}
+.ljxd div:hover{background:red;}
+.ljxd div i{display:block;height:40px;background: url(../L_img/shopw.png) no-repeat left center;padding-left:25px;margin-left:27px;}
+h6{height:43px;font-family: "PingFangSC-Semibold";font-size: 16px;color: #A3A3A3;line-height: 22px;font-weight:bold;padding:25px 0;}
+/*content*/
+/*规格参数*/
+.shop_text{padding:48px 0 0 55px;width:1008px;}
+.shop_text li{width:324px;}
+.shop_text li span{display:block;font-family: "PingFang-SC-Regular";font-size: 16px;color: #4d4d4d;line-height: 16px;}
+.shop_text li span i{color:#4e4e4e;margin-right:38px;display: inline-block;font-weight:bold;}
+.shop_text .ly19{margin-left:24px ;}
+.shop_text li .mbp33{margin-bottom:30px;}
+.shop_text .r3{width:306px;}
+/*line*/
+.mptext{height:62px;text-align: center;font-family: "STSongti-SC-Regular;"color: #4D4D4D;padding:82px 0;}
+.mptext strong{font-size: 30px;margin:0 32px;line-height: 30px;display:inline-block;}
+.mptext i{color:#4E4E4E;}
+.mptext h5{font-family: "BigCaslon-Medium";font-size: 16px;line-height: 16px;font-weight:bold;padding-top:17px;}
+/*navimg*/
+.navimg{}
+.navimg li{width:360px;height:225px;float: left;}
+.navimg li img{height:225px;}
+.navimg .lrmar{margin:0 60px;}
+.baner_p{height:362px;background: url(../L_img/reticul.png) no-repeat center;}
+.reticule_xij{height:180px;padding:2px 74px 77px;}
+.reticule_xij li{width:180px;height:180px;float:left;}
+.reticule_xij li img{height:180px;}
+.reticule_xij .lrmargin{margin:0 255px;}
+.reticule_x-4{height:640px;text-align:center;}
+.reticule_x-4 img{height:640px;}
+

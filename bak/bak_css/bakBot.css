@@ -1,0 +1,32 @@
+/*公共样式*/
+
+body{font-family: "PingFang-SC-Regular","STYuanti-SC-Regular","Microsoft YaHei";overflow-x;}
+.w{  width:1200px;margin:0 auto;}
+
+/*优快特售*/
+.footer-t{  padding:25px 0 14px 125px;background:#fff; width:1075px;margin:0 auto; }
+.footer-t ul{ width:895px;height:87px;border-bottom:1px solid #c8c8c8;font-size: 20px;line-height: 20px;padding:33px 0 0 33px;}
+.footer-t ul li{height:54px;float:left;margin-right:27px;}
+.footer-t ul .mn_n .foot_text{ margin-left:15px; }
+.footer-t ul li a{color: #232323;display:block;}
+.footer-t ul li a i{width:54px;height:54px;background:url(../bak_img/icon2.png) no-repeat 0 0;display:block;}
+.foot_text{margin-left:16px;padding-right:44px;}
+.last{padding-right:0;}
+.foot_text strong{display:block;font-weight: bold;margin-bottom:11px;}
+.f_line{width:1px;height:49px;background:#C7C7C7;}
+.footer-t ul li a .icon1{background-position:0 -110px;}
+.footer-t ul li a .icon2{background-position:0 -330px;}
+.footer-t ul li a .icon3{background-position:0 -220px;}
+.footer-t ul li a:hover{color:red;}
+/* 帮助中心*/
+.ft_boxb{width:100%;height:366px;}
+.footer-b{ height:366px;}
+.ft_l{width:806px;padding:25px 0 0 98px;}
+.ft_l dl{width:216px;height:100%;float:left;margin-left:48px;font-family:" STYuanti-SC-Bold";}
+.ft_l dl dt{margin-bottom:6px;}
+.ft_l dl dt a{font-size: 20px;color: #4B4B4B;line-height:20px;font-weight: bold;}
+.ft_l dl dd{line-height: 30px;}
+.ft_l dl dd a{font-size: 18px;color: #4b4b4b;}
+.ft_l dl dd a:hover{color:red;}
+.footer_r{padding-top:24px;}
+.footer_r span{font-family: "STYuanti-SC-Regular";font-size: 26px;color: #FF1E1E;font-weight:bold;line-height:26px;}

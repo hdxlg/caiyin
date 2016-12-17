@@ -1,0 +1,79 @@
+/*公共样式*/
+/*html { overflow-x: hidden; overflow-y: auto; }*/
+body{font-family: "PingFang-SC-Regular","STYuanti-SC-Regular","Microsoft YaHei","楷体";font-size:20px;overflow-x; }
+.w{width:1200px;margin:0 auto;}
+
+
+.head, .nav_box-t, .spin_l h4{width:100%;}
+.headbox div a, .serch_btn{font-family: "PingFangSC-Semibold";}
+.serch_bottom li{font-family:"PingFang-SC-Medium";}
+.shopCar a span, .nav_box{font-family:"PingFang-SC-Regular";}
+
+
+/*欢迎光临*/
+
+.head{ background:#e6e7e8;}
+.headbox{height:80px;line-height: 80px;color: #9B9B9D;}
+ 
+.headbox div{margin-right:3px;}
+.headbox div a{color: #9B9B9D;}
+.headbox div a:hover{color:red;}
+.headbox .landing{border-right:1px solid #9B9B9D;padding-right:10px;}
+/*log*/
+.log_box{height:137px;}
+.log{width:190px;height:137px;text-align:center;line-height:137px;background:#fff;}
+
+.serch{padding:47px 0 0 118px;}
+.inputbox{position:relative;height:34px;}
+.inputbox input{width:482px;height:32px;line-height:32px;border:1px solid #F30625;text-indent:1em;font-size: 18px;}
+.inputbox span{position:absolute;left:1em;top:6px;font-size: 16px;color:#ccc;}
+.serch_btn{width:100px;height:34px;color:#fff;line-height: 34px;text-align: center;background:#F30625;display:inline-block;font-size: 20px; }
+.serch_bottom{padding:6px 0 0 11px; }
+.serch_bottom li{float:left;border-right:1px solid 	#838384;height:16px;padding-right:22px;margin-left:28px;line-height: 16px;font-size:16px;}
+.serch_bottom .border_n{border-right:none;}
+.serch_bottom a{color:#838384;}
+.serch_bottom a:hover{color:red;}
+/*购物车*/
+.shopCar{width:180px;height:36px;border:1px solid #ccc;background:#fff;margin:45px 24px 0 0;position:relative;}
+.shopCar a span{font-size: 16px;color: #F30625;display:inline-block;line-height:36px;width:148px;height:36px;background:url(../bak_img/shopcar.png) no-repeat 28px center;text-indent:56px;font-weight: bold;}
+
+.shopCar .shopc{position:absolute;left:36px;top:-10px;}
+.shopCar .shopc i{width:4px;height:20px;position:absolute; }
+.shopCar .shopc .l{background:url(../bak_img/num-l.jpg);left:0;top:0;}
+.shopCar .shopc .r{background:url(../bak_img/num-r.jpg);right:0;top:0;}
+.shopCar .shopc div{height:20px;background:url(../bak_img/num_c.jpg) repeat-x;padding:0 4px;color:#fff;line-height: 16px;}
+
+/*navbox: 	;所以商品分类*/
+.nav_box-t{height:53px;background:#f30625;}
+.spin{height:53px;}
+.spin_l{width:190px;height:53px;cursor:pointer;position:relative;}
+.spin_l h4{height:100%;color:#fff;line-height: 53px;text-align: center;font-weight:bold;}
+.spin_l h4:hover{color:yellow;}
+.shopbox{width:190px;height:420px;background:#e9e9ea;position:absolute;left:0;top:53px;z-index: 169; display:none;}
+.shopbox li{width:140px;height:20px;line-height: 21px;padding:13px 25px;}
+.shopbox li a{display: block;overflow:hidden;}
+.shopbox li a i{width:20px;height:20px;background:url(../bak_img/icon.png) no-repeat;float:left;margin-right:20px;} 
+.shopbox li a span{font-size: 20px;color: #000;line-height: 20px;font-weight: bold;float:left;}
+
+.shopbox li .se_2{background-position:0 -60px; }
+.shopbox li .se_3{background-position:0 -120px; }
+.shopbox li .se_4{background-position:0 -180px; }
+.shopbox li .se_5{background-position:0 -240px; }
+.shopbox li .se_6{background-position:0 -300px; }
+.shopbox li .se_7{background-position:0 -360px; }
+.shopbox li .se_8{background-position:0 -420px; }
+.lebak{background:#fff;}
+.shopbox .lebak a .se_1{background-position:-220px 0; }
+.shopbox .lebak a .se_2{background-position:-220px -60px; }
+.shopbox .lebak a .se_3{background-position:-220px -120px; }
+.shopbox .lebak a .se_4{background-position:-220px -180px; }
+.shopbox .lebak a .se_5{background-position:-220px -240px; }
+.shopbox .lebak a .se_6{background-position:-220px -300px; }
+.shopbox .lebak a .se_7{background-position:-220px -360px; }
+.shopbox .lebak a .se_8{background-position:-220px -420px; }
+.shopbox .lebak a span{color: #E84F8B;}
+.spin_r{padding-left:66px;}
+.spin_r li{float:left;line-height: 53px;padding:0 50px;font-weight:bold;}
+.spin_r li a{color:#fff; }
+.spin_r li a:hover{color:yellow;}
+

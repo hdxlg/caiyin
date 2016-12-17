@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>彩印</title>
+		<link rel="stylesheet" type="text/css" href="L_css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakTop.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakBot.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/liucheng.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/shouhou.css"/>
+		<link rel="stylesheet" type="text/css" href="L_css/card.css"/>
+		<script src="L_js/jquery-1.7.2.js"></script>
+		<script src="L_js/ajax.js"></script>
+		<script src="L_js/fangdajing.js"></script>
+		
+	</head>
+	<body>
+		<!--top-->
+		<div id="top"></div>
+		<!--menu-->
+		<div class="car_box w clearfix">
+			<div class="sidebar_l fl">
+				<div class="con-FangDa" id="fangdajing">
+				  <div class="con-fangDaIMg">
+				  	<!-- 正常显示的图片-->
+				  	<img src="L_img/cardm1.png">
+				    <!-- 滑块-->  
+				    <div class="magnifyingBegin"></div>
+				    <!-- 放大镜显示的图片 -->
+				    <div class="magnifyingShow">
+				    	<img src="L_img/cardl1.png">
+				    </div>
+				  </div>
+				  
+				  <ul class="con-FangDa-ImgList">
+				    <!-- 图片显示列表 -->
+				    <li class="active">
+				    	<img src="L_img/cardl1.png" data-bigimg="L_img/cardl1.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/left_m2.png" data-bigimg="L_img/left2.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/left_m3.png" data-bigimg="L_img/left_m3.png">
+				    </li>
+				   
+				  </ul>
+				</div>
+
+				
+				<div class="fenx">
+					<span class="fl">分享</span>
+					<span class="sc fl">收藏商品(19人气)</span>
+					<strong class="fr">举报</strong>
+				</div> 
+			</div>
+			
+		<!--名片企业-->	
+			<div class="sidebar_r fr">
+				<div class="sider_tp">
+					<strong>名片</strong><span>企业／个人的代言物</span>
+				</div>
+				<!--=========================-->
+				<ul class="slidbr_box">
+					<li class="czlx clearfix asset1" id="asset1">
+						<span class="fl">材质类型：</span>
+						<select name="" class="sele1 fl" id="sele1">
+							<option value="0">--- 请选择 ---</option>
+							<option value="1">高级铜板纸</option>
+							<option value="2">光膜</option>
+							<option value="3">哑膜</option>
+							<option value="4">局部上光</option>
+							<option value="5">雅芙纸</option>
+							<option value="6">3D烫金</option>
+							<option value="7">莱尼卡</option>
+							<option value="8">荷兰白卡</option>
+							<option value="9">安格卡</option>
+							<option value="10">钢骨纸</option>
+							<option value="11">细纹纸</option>
+							<option value="12">炫光卡</option>
+							<option value="13">顶级象牙</option>
+							<option value="14">银箔卡</option>
+							<option value="15">磨砂卡</option>
+							<option value="16">钻石卡</option>
+							<option value="17">立体彩钻</option>
+							<option value="18">雾透卡</option>
+						</select>
+						<span class="fl">单双面：</span>
+						<select name="" class="sele2 fl">
+							<option value="0">-请选择-</option>
+							<option value="1">单面印刷</option>
+							<option value="2">双面印刷</option>
+						</select>
+					</li>
+					<li class="henum clearfix" id="henum1">
+						<span class="fl">盒数：</span>
+						<div class="fl clearfix">
+							<input type="text" name="" value="1" id="text1"/>
+							<i id="up"></i><i class="down" id="down"></i>
+						</div>
+						<span class="fl he">盒</span>
+						<span class="fl person">人数：</span>
+						<div class="fl clearfix">
+							<input type="text" name="" id="text2" value="1"/>
+							<i id="up2"></i><i class="down" id="down2"></i>
+						</div>
+						
+					</li>
+					<li class="zzcc" id="zzcc">
+						<span class="fl">纸张尺寸：</span>
+						<select name="" class="sele1 fl">
+							<option value="0">- 请选择 -</option>
+							<option value="1">90*54mm</option>
+							<option value="2">90*50mm</option>
+							<option value="3">90*108mm</option>
+							<option value="3">180*54mm</option>
+						</select>
+						<div class="zhizbox fr clearfix ">
+							<div class="ch_box fl"></div>
+							<span class="fl">自定尺寸</span>
+							<div class="chicn fl" id="chicn">
+								<input type="text" name="" id="" value=""/> <span>x</span>
+								<input type="text" name="" id="" value=""/> <span>mm</span>
+							</div>
+						</div>
+					</li>
+					<li class="clearfix houqi">
+						<span class=" fl">后期：</span>
+						<div class="ch_box2 fl" id="hq"></div>
+					</li>
+					<li class="gongy" id="gongy">
+						<div class="gy clearfix" id="gybox">
+							<span class="fl">工艺：</span>
+							<div class="fl" id="div1"></div>
+							<span class="fl">打圆角</span>
+							<div class="fl" id="div2"></div>
+							<span class="fl">模切</span>
+							<div class="fl" id="div3"></div>
+							<span class="fl">打孔</span>
+						</div>
+						<div class="clearfix gy2" id="gy2">
+							<span class="fl">压钢线：</span>
+							<select name="" class="fl ygx1">
+								<option value="0">请选择</option>
+								<option value="1">一条线</option>
+								<option value="2">二条线</option>
+								<option value="3">三条线</option>
+								<option value="4">四条线</option>
+							</select>
+							<span class="fl">压齿线：</span>
+							<select name="" class="fl ygx2">
+								<option value="0">请选择</option>
+								<option value="1">一条线</option>
+								<option value="2">二条线</option>
+								<option value="3">三条线</option>
+								<option value="4">四条线</option>
+							</select>
+							<span class="fl tangj">烫金：</span>
+							<select name="" class="fl ygx3">
+								<option value="0">请选择</option>
+								<option value="1">烫金单面</option>
+								<option value="1">烫金双面</option>
+								
+							</select>
+						</div>
+					</li>
+					<!--印刷文件-->
+					<li class="yswj clearfix" id="yswj">
+						<span class="fl">印刷文件：</span>
+						<div class="upbox fl clearfix" id="upbox">
+							<a href="javascript:;">
+								<i class="fl"></i>
+								<b class="fr"></b>
+								<strong class="fl">上传印刷文件</strong>
+							</a>
+						</div>
+						<div class="zxmb fl clearfix" id="downbox">
+							<a href="javascript:;">
+								<i class="fl"></i>
+								<b class="fr"></b>
+								<strong class="fl">上传印刷文件</strong>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="jiage">
+					<span>价格:</span><strong>¥<i>16.00</i></strong>
+				</div>
+				<div class="ljxd clearfix">
+					<a href="javascript:;"><span class="fl">立即下单</span></a>
+					<a href="javascript:;"><div class="fl"><i>加入购物车</i><b></b></div></a>
+				</div>
+				<h6>
+					服务承诺 	1-2天起（数量大于200个延长1天）。<br/>
+					客服7*11小时在线服务 按时印刷发货，质量问题免费重印，提供正规发票。	
+				</h6>
+			</div>
+		</div>
+		
+			
+			
+			
+			
+			
+		<!--content-->
+		<div class="content w">
+			<div id="liucheng"></div>
+			<!--规格参数-->
+			<div class="gmlc">
+				<div class="gmlc clearfix">
+					<i class="shopg fl">规格参数</i>
+					<ul class="shop_text fl clearfix">
+						<li class="fl">
+							<span class="mbp33"><i>商品名称：</i>经典名片</span>
+							<span><i>印刷数量：</i>1盒起印(每盒100张)</span>
+						</li> 
+						<li class="ly19 fl">
+							<span class="mbp33"><i>材料类型：</i>300g铜版纸</span>
+							<span><i>成品尺寸：</i>90*54mm</span>
+						</li> 
+						<li class="r3 fr">
+							<span><i>出货周期：</i>1天</span>
+						</li> 
+					</ul>
+				
+				</div>
+			</div>	
+			<!--
+            	名片案例
+            -->
+            <!--line-->
+			<div class="mptext">
+				 <i>————</i><strong>名片案例</strong><i>————</i> 
+				<h5>CARD  CASE </h5>
+			</div>
+			
+			
+			<ul class="baner">
+				<li><a href="javascript:;"><img src="L_img/mpal1.png" alt="名片" /></a></li>
+				<li><a href="javascript:;"><img src="L_img/mpal2.png" alt="名片" /></a></li>
+				<li class="borer_n"><a href="javascript:;"><img src="L_img/mpal3.png" alt="名片" /></a></li>
+				<li><a href="javascript:;"><img src="L_img/mpal4.png" alt="名片" /></a></li>
+				<li><a href="javascript:;"><img src="L_img/mpal5.png" alt="名片" /></a></li>
+				<li class="borer_n"><a href="javascript:;"><img src="L_img/mpal6.png" alt="名片" /></a></li>
+				 
+			</ul>
+			<div class="xjzs">细节展示</div>
+			<div class="mptext">
+				 <i>———— </i><strong>&nbsp; 尺寸&nbsp;  </strong><i> ————</i> 
+				<h5>SIZE</h5>
+			</div>
+			<div class="hjbl clearfix">
+				 <i class="fl"></i><span class="fl">黄金比例，完美呈现 </span>
+			</div>
+			<div class="line_tiao clearfix">
+				<div class="fl">
+					<i></i>
+					<em></em>
+				</div>
+				<b class="fl"></b>
+			</div>
+			<div class="mptext">
+				 <i>————</i><strong>选择理由</strong><i>————</i> 
+				<h5>REASON</h5>
+			</div>
+			<div class="hjbl clearfix">
+				 <i class="fl"></i><span class="fl">专业，多年行业经验 </span>
+			</div>
+			<ul class="job_jy clearfix">
+				<li class="renz">
+					<span>认真 SPECIALITY</span>
+					<img src="L_img/ren1.png" alt="认真" />
+				</li>
+				<li class="ren2 clearfix">
+					<img src="L_img/ren2.png" alt="认真" class="fl" />
+					<div class="fl">
+						<span class="tel_l">高效</span><span>EFFICIENCY</span>
+					</div>
+				</li>
+				<li class="ren3">
+					<div>
+						<span class="rebot">ORIGINALITY</span>
+						<span>创意</span>
+					</div>
+					<img src="L_img/ren3.png" alt="创意" />
+				</li>
+			</ul>
+			<div class="hjbl clearfix">
+				 <i class="fl"></i><span class="fl">专研，多种产品工艺 </span>
+			</div>
+			<ul class="cpgy">
+				<li>
+					<img src="L_img/cpgy1.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>烫金</span><i> ———</i>
+					</div>
+				</li>
+				<li>
+					<img src="L_img/cpgy2.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>异形</span><i> ———</i>
+					</div>
+				</li>
+				<li class="mar_n">
+					<img src="L_img/cpgy3.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>模切</span><i> ———</i>
+					</div>
+				</li>
+				<li>
+					<img src="L_img/cpgy4.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>覆膜</span><i> ———</i>
+					</div>
+				</li>
+				<li>
+					<img src="L_img/cpgy5.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>凹凸</span><i> ———</i>
+					</div>
+				</li>
+				<li class="mar_n">
+					<img src="L_img/cpgy6.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>水晶</span><i> ———</i>
+					</div>
+				</li>
+			</ul>
+			<div class="xijie clearfix">
+				<div class="hjbl clearfix">
+				 <i class="fl"></i><span class="fl">专注，注重每一处细节</span>
+				</div>
+			</div>
+			<div class="xjimg">
+				<img src="L_img/xjimg.png" alt="" />
+			</div>
+			<div class="mptext mptext2">
+				 <i>———— </i><strong>&nbsp;售后无忧&nbsp;  </strong><i> ————</i> 
+				<h5>AFTER-SALES</h5>
+			</div>
+			
+			<div id="shouh"></div>
+			
+		</div>
+		<!--footer
+		-->
+		<div id="bot"></div>
+		 <script >
+		 	loadHtml("bak/bakTop.html", "top");
+		 	loadHtml("bak/bakBot.html", "bot");
+		 	loadHtml("bak/liucheng.html", "liucheng");
+		 	loadHtml("bak/shouhou.html", "shouh");
+		 	function autoWidth(id)
+			  {
+				  id.style.width = '233px';
+			  }
+			;(function(){
+				var selectId = document.getElementById("sele1");
+		 		autoWidth(selectId);
+			})();
+		 </script>
+		<script src="bak/bak_js/bak_jq_top.js"></script>
+		<script src="bak/bak_js/bak_top.js"></script>
+		<script src="L_js/card.js"></script>
+		
+	</body>
+</html>

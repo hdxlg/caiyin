@@ -1,0 +1,13 @@
+.gmlc{height:139px;background:#f8f8f8;margin-top:25px;}
+.shopg{width:137px;height:36px;line-height: 36px;font-weight:bold;font-size: 16px;color:#fff;background:url(../../L_img/ti.png) no-repeat;text-indent:22px;font-family: "PingFangSC-Semibold";}
+
+.sh_opc{padding:22px 0 0 55px; }
+.sh_opc li{float:left;}
+.sh_opc li span{width:34px;height:34px;background:#fff;border-radius:50%;padding:15px; }
+.sh_opc li span b{width:34px;height:34px;background:url(../../L_img/liu_c.png) no-repeat;display: block;}
+.sh_opc li i{width:20px;height:20px;background:url(../../L_img/liu_c.png) no-repeat 0 -204px;margin:22px 55px 0 55px; }
+.sh_opc li h5{font-family: " PingFang-SC-Regular";font-size: 16px;color: #747474;padding-top:11px;}
+.sh_opc .li1 span b{background-position:0 -34px;}
+.sh_opc .li2 span b{background-position:0 -68px;}
+.sh_opc .li3 span b{background-position:0 -102px;}
+.sh_opc .li4 span b{background-position:0 -136px;}

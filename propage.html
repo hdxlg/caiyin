@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>彩印</title>
+		<link rel="stylesheet" type="text/css" href="L_css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakTop.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/bakBot.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/liucheng.css"/>
+		<link rel="stylesheet" type="text/css" href="bak/bak_css/shouhou.css"/>
+		<link rel="stylesheet" type="text/css" href="L_css/propage.css"/>
+		<script src="L_js/jquery-1.7.2.js"></script>
+		<script src="L_js/ajax.js"></script>
+		<script src="L_js/fangdajing.js"></script>
+		
+	</head>
+	<body>
+		<!--top-->
+		<div id="top"></div>
+		<!--menu-->
+		<div class="car_box w clearfix">
+			<div class="sidebar_l fl">
+				<div class="con-FangDa" id="fangdajing">
+				  <div class="con-fangDaIMg">
+				  	<!-- 正常显示的图片-->
+				  	<img src="L_img/xczy3.png">
+				    <!-- 滑块-->  
+				    <div class="magnifyingBegin"></div>
+				    <!-- 放大镜显示的图片 -->
+				    <div class="magnifyingShow">
+				    	<img src="L_img/xczy3.png">
+				    </div>
+				  </div>
+				  
+				  <ul class="con-FangDa-ImgList">
+				    <!-- 图片显示列表 -->
+				    <li class="active">
+				    	<img src="L_img/xczy1.png" data-bigimg="L_img/xczy1.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/xczy2.png" data-bigimg="L_img/xczy2.png">
+				    </li>
+				    <li>
+				    	<img src="L_img/xczy2.png" data-bigimg="L_img/xczy2.png">
+				    </li>
+				   
+				  </ul>
+				</div>
+
+				
+				<div class="fenx">
+					<span class="fl">分享</span>
+					<span class="sc fl">收藏商品(19人气)</span>
+					<strong class="fr">举报</strong>
+				</div> 
+			</div>
+			
+		<!--名片企业-->	
+			<div class="sidebar_r fr">
+				<div class="sider_tp"><strong>名片</strong><span>企业／个人的代言物</span></div>
+				
+		<!--
+        	 R
+        -->		
+				<ul class="jingd" id="jingd">
+					<li class="zzlx clearfix">
+						<span class="fl">纸张类型：</span>
+						<select name="" class="fl sele1" id="sele1">
+							<option value="">--------- 请选择 --------</option>
+							<option value="">100G胶板纸</option>
+							<option value="">铜板105g</option>
+						</select>
+						<span class="fl">单双面：</span>
+						<select name="" class="fl sele1-2">
+							<option value="">-- 请选择 --</option>
+							<option value="">单面印刷</option>
+							<option value="">双面印刷</option>
+						</select>
+					</li>
+					<li class="zzlx2 clearfix">
+						<span class="fl">纸张尺寸：</span>
+						<select name="" class="fl sele1">
+							<option value="">--------- 请选择 --------</option>
+							<option value="">16K(成品210mm*285mm)</option>
+							<option value="">8K(成品420mm*285mm)</option>
+							<option value="">4K(成品420mm*570mm)</option>
+							<option value="">对K(成品840mm*570mm)</option>
+						</select>
+						<div class="bak fl" id="bak"></div>
+						<span class="fl">自定尺寸:</span>
+						<div class="input_box fl" id="input_box">
+							<input type="text" value="" /> <span>x</span>
+							<input type="text" value="" /> <span>mm</span>
+						</div>
+					</li>
+					<li class="zzlx3 clearfix">
+						<span class="fl">印刷折页：</span>
+						<select name="" class="fl sele3">
+							<option value="">---- 请选择 ---</option>
+							<option value="">二折页</option>
+							<option value="">三折页</option>
+							<option value="">四折页</option>
+						</select>
+						<span class="fl">数量：</span>
+						<div class="fl clearfix">
+							<input type="text" value="1"  class="fl" id="text1"/>
+							<i class="fr" id="topp"></i>
+							<i class="fr down" id="down"></i>
+						</div>
+						<span class="fl">张</span>
+					</li>
+					<li class="zzlx4 clearfix">
+						<span class="fl">后期：</span>
+						<div class="bak fl" id="show"></div>
+					</li>
+					<li class="zzlx5 zzlx4 " id="showbox">
+						<div class="zxtop clearfix" id="zxtop">
+							<span class="fl">工艺：</span>
+							<div class="bak fl"></div>
+							<span class="fl moqie">模切</span>
+							<span class="fl">打号码：</span>
+							<select name="" class="fl">
+								<option value="">-- 请选择 --</option>
+								<option value="">带NO</option>
+								<option value="">不带NO</option>
+							</select>
+						</div>
+						<div class="zxbot clearfix">
+							<span class="fl">压钢线：</span>
+							<select name="" class="fl sele4">
+								<option value="">-请选择-</option>
+								<option value="">一条线</option>
+								<option value="">二条线</option>
+								<option value="">三条线</option>
+								<option value="">四条线</option>
+							</select>
+							<span class="fl">压齿线：</span>
+							<select name="" class="fl sele4">
+								<option value="">--请选择--</option>
+								<option value="">一条线</option>
+								<option value="">二条线</option>
+								<option value="">三条线</option>
+								<option value="">四条线</option>
+							</select>
+							<span class="fl tangj">烫金：</span>
+							<select name="" class="fl sele4-3">
+								<option value="">--请选择--</option>
+								<option value="">光膜单面</option>
+								<option value="">光膜双面</option>
+								<option value="">哑膜单面</option>
+								<option value="">哑膜双面</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+				<div class="updown clearfix" >
+					<span class="fl">印刷文件：</span>
+					<div class="fl clearfix" id="updown">
+						<a href="javascript:;">
+							<b class="fl"></b>
+							<i class="fl"></i>
+							<span class="fl">上传印刷文件</span>
+						</a>
+					</div>
+					<div class="fl zxmb" id="updown_d">
+						<a href="javascript:;">
+							<b class="fl"></b>
+							<i class="fl"></i>
+							<span class="fl">在线模版设计</span>
+						</a>
+					</div>
+				</div>
+				<div class="jiage">
+					<span>价格：</span>
+					<span class="colorr">¥ <i>16.00</i></span>
+				</div>
+				<ul class="clearfix shopd">
+					<li class="fl shopd1"><a href="javascript:;">立即下单</a></li>
+					<li class="fl shopd2"><i><a href="javascript:;">加入购物车</a></i></li>
+				</ul>
+				<h5>
+					服务承诺 	1-2天起（数量大于200个延长1天）。<br/>
+					客服7*11小时在线服务 按时印刷发货，质量问题免费重印，提供正规发票。	
+				</h5>
+			</div>
+		</div>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+		<!--content-->
+		<div class="content w">
+			<div id="liucheng"></div>
+			<!--规格参数-->
+			<div class="gmlc">
+				<div class="gmlc clearfix">
+					<i class="shopg fl">规格参数</i>
+					<ul class="shop_text fl clearfix">
+						<li class="fl">
+							<span class="mbp33"><i>商品名称：</i>宣传折页</span>
+							<span><i>印刷数量：</i>50张起印</span>
+						</li> 
+						<li class="ly19 fl">
+							<span class="mbp33"><i>材料类型：</i>100g胶版纸</span>
+							<span><i>成品尺寸：</i>A3  A4  A5</span>
+						</li> 
+						<li class="r3 fr">
+							<span><i>出货周期：</i>3天</span>
+						</li> 
+					</ul>
+				
+				</div>
+			</div>	
+			<!--
+            	折页案例
+            -->
+            <!--line-->
+			<div class="mptext">
+				 <i>————</i><strong>折页案例</strong><i>————</i> 
+				<h5>LEAFLET  CASE </h5>
+			</div>
+			
+			
+			<ul class="baner">
+				<li><a href="javascript:;"><img src="L_img/zheye1.png" alt="名片" /></a></li>
+				<li class="baner_c"><a href="javascript:;"><img src="L_img/zheye2.png" alt="名片" /></a></li>
+				<li class="borer_n"><a href="javascript:;"><img src="L_img/zheye3.png" alt="名片" /></a></li>
+				
+			</ul>
+			 
+			<div class="mptext">
+				 <i>———— </i><strong>&nbsp; 类型&nbsp;  </strong><i> ————</i> 
+				<h5>TYPE</h5>
+			</div>
+			<div class="leixin"> </div>
+			
+			
+			<div class="mptext">
+				 <i>————</i><strong>选择理由</strong><i>————</i> 
+				<h5>REASON</h5>
+			</div>
+			<div class="hjbl clearfix">
+				 <i class="fl"></i><span class="fl">专业团队</span>
+			</div>
+			<!--专业团队-->
+			<div class="zhuantd">
+				<img src="L_img/zhuanye1.png" alt="专业" class="zhuan1">
+				<img src="L_img/bny1.png" alt="专业" class="zhuan2"/>
+				<span class="ten"><i class="hangn">10</i>年行内设计</span>
+				<strong class="zongj">总监亲自操刀</strong>
+			</div>
+			 <!--环保油墨-->
+			 <div class="hjbl clearfix">
+				 <i class="fl"></i><span class="fl">环保油墨</span>
+			</div>
+			<!-- -->
+			<div class="zhuantd hbym">
+				<img src="L_img/zhaunye2.png" alt="专业" class="zhuan1">
+				<img src="L_img/zhuanye7.png" alt="专业" class="zhuan2"/>
+				<span class="ten"><i class="hangn">高</i>分辨率，色彩艳丽</span>
+				<strong class="zongj">环保油墨，人体无害。</strong>
+			</div>
+			 
+			 
+			<div class="hjbl clearfix">
+				 <i class="fl"></i><span class="fl">多种工艺</span>
+			</div>
+			<ul class="cpgy">
+				<li>
+					<img src="L_img/cpgy1.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>烫金</span><i> ———</i>
+					</div>
+				</li>
+				<li>
+					<img src="L_img/cpgy2.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>异形</span><i> ———</i>
+					</div>
+				</li>
+				<li class="mar_n">
+					<img src="L_img/cpgy3.png" alt="产品工艺 " />
+					<div>
+						<i>——— </i><span>模切</span><i> ———</i>
+					</div>
+				</li>
+				
+			</ul>
+			
+			<div class="mptext mptext2">
+				 <i>———— </i><strong>售后无忧</strong><i> ————</i> 
+				<h5>AFTER-SALES</h5>
+			</div>
+			<div id="shouh"></div>
+			
+		</div>
+		<!--footer
+		-->
+		<div id="bot"></div>
+		 <script >
+		 	loadHtml("bak/bakTop.html", "top");
+		 	loadHtml("bak/bakBot.html", "bot");
+		 	loadHtml("bak/liucheng.html", "liucheng");
+		 	loadHtml("bak/shouhou.html", "shouh");
+		 	function autoWidth(id)
+			  {
+				  id.style.width = '238px';
+			  }
+			;(function(){
+				var selectId = document.getElementById("sele1");
+		 		autoWidth(selectId);
+			})();
+			
+		 	
+		 </script>
+		<script src="bak/bak_js/bak_jq_top.js"></script>
+		<script src="bak/bak_js/bak_top.js"></script>
+		<script src="L_js/propage.js"></script>
+		
+	</body>
+</html>
